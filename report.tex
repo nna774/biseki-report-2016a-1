@@ -1,0 +1,177 @@
+\documentclass[12pt,a4]{article}
+
+\setlength{\textwidth}{17cm}
+\setlength{\textheight}{24cm}
+\setlength{\leftmargin}{-1cm}
+\setlength{\topmargin}{-2cm}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\evensidemargin}{0cm}
+
+\usepackage{xltxtra}
+\setmainfont{IPAPMincho}
+\setsansfont{IPAPGothic}
+\setmonofont{IPAGothic}
+\XeTeXlinebreaklocale "ja"
+
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{amsmath}
+
+\title{微分積分学続論IIレポート課題1}
+\date{}
+
+\begin{document}
+\maketitle
+
+\fbox{1}
+
+\begin{equation}
+  A=
+  \begin{pmatrix}
+    1 & 0 \\
+    1 & 2
+  \end{pmatrix}
+\end{equation}
+の固有多項式
+\begin{equation}
+  \begin{vmatrix}
+    tI-A
+  \end{vmatrix}
+  =
+  \begin{vmatrix}
+    t - 1 & 0 \\
+    -1    & t - 2
+  \end{vmatrix}
+  = (t-1)(t-2)
+\end{equation}
+より、Aの固有値は1、2。
+
+1に対する固有ベクトルは、
+$
+\left(
+\begin{array}{c}
+  x \\
+  y
+\end{array}
+\right)
+\neq
+\left(
+\begin{array}{c}
+  0 \\
+  0
+\end{array}
+\right)
+$
+なる
+$
+\left(
+\begin{array}{c}
+  x \\
+  y
+\end{array}
+\right)
+$ で、
+\begin{equation}
+  \begin{pmatrix}
+    0 & 0 \\
+    -1 & -1
+  \end{pmatrix}
+  \left(
+  \begin{array}{c}
+    x \\
+    y
+  \end{array}
+  \right)
+  = 0
+\end{equation}
+となるようなものなので、
+$
+\left(
+\begin{array}{c}
+  \frac{1}{\sqrt{2}}\\
+  \frac{-1}{\sqrt{2}}
+\end{array}
+\right)
+$などが取れる。
+
+2に対する固有ベクトルは、
+$
+\left(
+\begin{array}{c}
+  x \\
+  y
+\end{array}
+\right)
+\neq
+\left(
+\begin{array}{c}
+  0 \\
+  0
+\end{array}
+\right)
+$
+なる
+$
+\left(
+\begin{array}{c}
+  x \\
+  y
+\end{array}
+\right)
+$ で、
+\begin{equation}
+  \begin{pmatrix}
+    -1 & 0 \\
+    -1 & 0
+  \end{pmatrix}
+  \left(
+  \begin{array}{c}
+    x \\
+    y
+  \end{array}
+  \right)
+  = 0
+\end{equation}
+となるようなものなので、
+$
+\left(
+\begin{array}{c}
+  0\\
+  1
+\end{array}
+\right)
+$
+などが取れる。
+
+$ P =
+\begin{pmatrix}
+  \frac{1}{\sqrt{2}} & 0 \\
+  \frac{-1}{\sqrt{2}} & 1
+\end{pmatrix}
+$
+とすると、
+$ P^{-1} =
+\begin{pmatrix}
+  \sqrt{2} & 0 \\
+  1 & 1
+\end{pmatrix}
+$ で、
+
+$ P^{-1} A P =
+\begin{pmatrix}
+  1 & 0 \\
+  0 & 2
+\end{pmatrix}
+$ となるので、
+$
+A^n = P \begin{pmatrix}
+  1 & 0 \\
+  0 & 2
+\end{pmatrix}^n P^{-1}
+=
+\begin{pmatrix}
+  1 & 0 \\
+  2^n -1 & 2^n
+\end{pmatrix}
+$
+\end{document}

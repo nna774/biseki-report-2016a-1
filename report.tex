@@ -174,4 +174,33 @@ A^n = P \begin{pmatrix}
   2^n -1 & 2^n
 \end{pmatrix}
 $
+
+\fbox{2}
+
+位置rにいる時の速度Vは $ V(r) = - r^2 $ となるので、
+つまり$ \frac{dr}{dt} = - r^2 $。
+時刻0で点Aにいるとして、点Oと点Aの中点Bに至る時刻を考える。
+\begin{equation}
+  \left\{
+  \begin{aligned}
+    \frac{dr}{dt} & = - r^2 \\
+    r(0) & = 1
+  \end{aligned}
+  \right.
+\end{equation}
+となるので、
+\begin{equation}
+  \int_1^r \frac{-dr}{r^2} = \int_0^t dt \\
+\end{equation}
+\begin{equation}
+  \frac{1}{r} - 1 = t
+\end{equation}
+より
+(どこかで$r=0$となると恒等的に$r=0$であるということとなるが、
+今回は最初質点はAにいるということとしているので、考えなくて良い)、
+\begin{equation}
+  r = \frac{1}{t+1}
+\end{equation}
+これで $ r = \frac{1}{2} $ となるのは $ t = 1 $ の時なので、質点がAからBに行くまでには$1$かかるということがわかる。
+
 \end{document}

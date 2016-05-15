@@ -202,4 +202,35 @@ $
 \end{equation}
 これで $ r = \frac{1}{2} $ となるのは $ t = 1 $ の時なので、質点がAからBに行くまでには$1$かかるということがわかる。
 
+\vskip\baselineskip
+\fbox{3}
+yの初期値は2rである。
+問題より$ \frac{dV}{dt} = \alpha \sqrt{y} $。
+
+$ y = y $ の時の水面の面積、つまり $ \frac{dV}{dy} $は、
+水面の半径を$d$とすると、$ \pi d^2 $となり、$d$は
+$ d^2 + (r-y)^2 = r^2 $ なので、
+\begin{equation}
+  \frac{dV}{dy} = \pi y (2r-y)
+\end{equation}
+
+$ \frac{dV}{dy} \frac{dy}{dt} = \frac{dV}{dt} $ より(合成関数の微分)、
+
+\begin{equation}
+  \frac{dy}{dt} = \frac{1}{\pi (2r-y)} \alpha \sqrt{y}
+\end{equation}
+となるので、
+\begin{equation}
+  \pi \int_{2r}^y \frac{2r-y}{\alpha\sqrt{y}} dy = \int_0^t dt( = t)
+\end{equation}
+より、
+\begin{equation}
+  \pi (\frac{2\sqrt{y}}{\alpha}(2r-\frac{1}{3}y) - \frac{8\sqrt{2r}}{3\alpha}r) = t
+\end{equation}
+となり、これで$y=0$となるのは、
+
+\begin{equation}
+  t =\pi \frac{8\sqrt{2r}}{3\alpha}r
+\end{equation}
+の時である。
 \end{document}

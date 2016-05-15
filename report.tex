@@ -237,6 +237,7 @@ $ \frac{dV}{dy} \frac{dy}{dt} = \frac{dV}{dt} $ より(合成関数の微分)、
 \vskip\baselineskip
 \fbox{4}
 
+\vskip\baselineskip
 問1
 
 有界閉区間上$I$の$C^1$級関数$f$について、平均値の定理より、
@@ -255,5 +256,26 @@ $f'$は$f$が$C^1$級なので連続で、有界閉集合上の連続関数は�
 
 となり、これは$f$が一様Lipschitz連続であるということである。
 
+\vskip\baselineskip
+問2
+
+$[0,1]$上での関数、
+\begin{equation}
+  \left\{
+  \begin{aligned}
+    f(x) & = x \sin{\frac{1}{x}} \\
+    f(0) & = 0
+  \end{aligned}
+  \right.
+\end{equation}
+を考えると、これは有界閉区間上の実数値連続関数で、各内点で微分可能である。
+
+この関数の$ x>0 $ での導関数$f'$は、
+\begin{equation}
+  f'(x) = \sin{\frac{1}{x}} - \frac{1}{x} \cos{\frac{1}{x}}
+\end{equation}
+となりこれは有界ではない。
+
+よってこれはこの区間上で一様Lipschitz連続ではなく、存在した。
 
 \end{document}

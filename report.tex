@@ -1,11 +1,11 @@
 \documentclass[12pt,a4]{article}
 
-\setlength{\textwidth}{17cm}
-\setlength{\textheight}{24cm}
+%\setlength{\textwidth}{17cm}
+%\setlength{\textheight}{24cm}
 %\setlength{\leftmargin}{-1cm}
 %\setlength{\topmargin}{-2cm}
-\setlength{\oddsidemargin}{0cm}
-\setlength{\evensidemargin}{0cm}
+%\setlength{\oddsidemargin}{0cm}
+%\setlength{\evensidemargin}{0cm}
 
 \usepackage{xltxtra}
 \setmainfont{IPAPMincho}
@@ -24,6 +24,18 @@
 \maketitle
 
 \fbox{1}
+問) 2次正方行列 
+\[
+  A=
+  \begin{pmatrix}
+    1 & 0 \\
+    1 & 2
+  \end{pmatrix}
+\]
+の固有値と固有ベクトルを求めて対角化し、さらに行列の羃 $ A^n $ を求めよ。
+
+\vskip\baselineskip
+解答)
 \begin{equation}
   A=
   \begin{pmatrix}
@@ -176,6 +188,12 @@ $
 
 \vskip\baselineskip
 \fbox{2}
+問)
+数直線上で原点に向かって運動する質点がある。原点からの距離が $ r $ の時の質点の速さが $ r^2 $の時、
+質点が原点からの距離が1である点Aを通過してOとAの中点に至る時間を求めよ。
+
+\vskip\baselineskip
+解答)
 位置rにいる時の速度Vは $ V(r) = - r^2 $ となるので、
 つまり$ \frac{dr}{dt} = - r^2 $。
 時刻0で点Aにいるとして、点Oと点Aの中点Bに至る時刻を考える。
@@ -204,6 +222,14 @@ $
 
 \vskip\baselineskip
 \fbox{3}
+問)
+水を一杯に満たした半径$r$の球形容器の底に小さな穴を空け、排水を行なう。
+排水開始の時刻を$t=0$とし、時刻$t$での穴から水面までの高さを$h$、排水開始から時刻$t$までの排水量を$V(t)$とすると、
+ある正定数$\alpha$に対して、$V'(t)=\alpha\sqrt(y)$という関係があるという。
+水面は常に水平に保たれているとして、$y(t)$に関する微分方程式を立てて、排水に要した時間を求めよ。
+
+\vskip\baselineskip
+解答)
 yの初期値は2rである。
 問題より$ \frac{dV}{dt} = \alpha \sqrt{y} $。
 
@@ -236,8 +262,16 @@ $ \frac{dV}{dy} \frac{dy}{dt} = \frac{dV}{dt} $ より(合成関数の微分)、
 
 \vskip\baselineskip
 \fbox{4}
+問)
+
+問1)
+有界閉区間上の$C^1$級実数値関数はこの区間上で一様リプシッツ連続であることを示せ。
+
+問2)
+有界閉区間上の実数値連続関数で、各(内)点上で微分可能であって、しかもこの区間上で一様リプシッツ連続とはならないものは存在するか？
 
 \vskip\baselineskip
+解答)
 問1
 
 有界閉区間上$I$の$C^1$級関数$f$について、平均値の定理より、
